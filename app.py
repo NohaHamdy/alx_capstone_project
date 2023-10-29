@@ -1,14 +1,15 @@
-from flask import Flask
+from flask import Flask, render_template , url_for, request
 
 app = Flask(__name__)
 
 flask_app_path = app.root_path
+app.static_folder = 'templates'
 
 @app.route('/contact', methods=['GET', 'POST'])
 def contact():
     if request.method == 'GET':
         # Display the contact form
-        return render_template('contact.html')
+        return render_template('contact_form.html')
     elif request.method == 'POST':
         # Validate and process the contact form
         name = request.form['name']

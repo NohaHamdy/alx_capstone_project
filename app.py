@@ -25,7 +25,6 @@ def contact():
         # Display a success message
         return render_template('contact_success.html')
 
-
 @app.route('/', methods=['GET'])
 def index():
     # ...
@@ -41,7 +40,6 @@ def send_email(name, email, message):
 From: {} <{}>
 To: {}
 Subject: Contact form submission
-
 {}
 """.format(name, email, 'nohatota99@gmail.com', message)
 

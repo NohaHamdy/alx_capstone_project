@@ -10,7 +10,7 @@ It's the end of my journey in ALX program and this project is where I apply all 
 
 ## Features 
 - Easy to navigation through my projects.  
-- Mycontact info are readily available for any interested clients or visitors.   
+- My contact info are readily available for any interested clients or visitors.   
 
 ## Technologies Used  
 - I have used some of the technologies I learnt over the course of this program cumulatively to make this portfolio come alive.  

@@ -9,7 +9,6 @@ app.static_folder = 'templates'
 @app.route('/contact', methods=['GET', 'POST'])
 
 
-
 def contact():
     if request.method == 'GET':
         # Display the contact form
@@ -27,13 +26,11 @@ def contact():
         return render_template('contact_success.html')
 
 
-
 @app.route('/', methods=['GET'])
 def index():
     # ...
 
     return render_template('index.html', contact_link=url_for('contact'))
-
 
 def send_email(name, email, message):
     email_server = smtplib.SMTP('smtp.gmail.com', 587)
@@ -51,8 +48,5 @@ Subject: Contact form submission
     email_server.sendmail('nohatota99@gmail.com', 'nohatota99@gmail.com', email_message)
     email_server.quit()
 
-
-
 if __name__ == '__main__':
     app.run(debug=True)
-
